@@ -4,8 +4,8 @@ README
 
 This is a full stack app that recommends skincare products for morninig/evening routines based on skincare concerns. 
 
--Skincare products (using API)
-https://github.com/LauraRobertson/skincareAPI
+-Skincare products (seeded)
+
 -User model
 ///////////////////SKINCARE PRODUCTS/////////////////
 Each skincare product will have attributes from skincare analysis
