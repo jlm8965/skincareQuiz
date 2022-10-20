@@ -1,0 +1,60 @@
+{% layout 'layout.liquid' %}
+{% block content %}
+
+<div>
+    <h1>Skincare Analysis</h1>
+</div>
+    <form action="/skincares/quiz/results">
+    <h2>Question 1</h2>
+        <p>
+            Are you looking for a night routine or a day routine? 
+        </p>
+        <input type="radio" id="day" name="nightOrDay" value="true">
+        <label for="true" > Day</label> <br>
+        <input type="radio" id="night" name="nightOrDay" value="false">
+        <label for="false" > Night</label> <br>
+
+    <h2>Question 2</h2>
+        <p>
+            Do you have sensitive skin? 
+        </p>
+        <input type="radio" id="sensitive" name="sensitiveSkin" value="true">
+        <label for="true" > Sensitive</label> <br>
+        <input type="radio" id="normal" name="sensitiveSkin" value="false">
+        <label for="false" > Normal</label> <br>
+
+
+    <h2>Question 3</h2>
+        <p>
+            What is your skin type?
+        </p>
+        <input type="radio" id="Normal/Combo" name="skinType" value="true">
+        <label for="true" > Normal/Combo</label> <br>
+        <input type="radio" id="Oily" name="skinType" value="true">
+        <label for="true" > Oily</label> <br>
+        <input type="radio" id="Dry" name="skinType" value="true">
+        <label for="true" >Dry</label><br>
+
+    <h2>Question 4</h2>
+        <p>
+            What are your skincare concerns?
+        </p>
+        <input type="radio" id="Brightening" name="skinConcern" value="Brightening">
+        <label for="true" >Brightening</label> <br>
+        <input type="radio" id="SunProtection" name="skinConcern" value="SunProtection">
+        <label for="true" > Sun Protection</label> <br>
+        <input type="radio" id="LinesAndWrinkles" name="skinConcern" value="LinesAndWrinkles">
+        <label for="true" >Fine lines and Wrinkles</label><br> 
+    <button href="#" onclick="submitform()">submit</button> 
+     </form>
+
+
+<div class="container-sm">
+
+</div>
+
+<script>
+
+
+</script>
+{% endblock %}

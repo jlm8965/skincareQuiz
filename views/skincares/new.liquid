@@ -1,0 +1,43 @@
+{% layout 'layout.liquid' %}
+{% block content %}
+
+<div class="container-sm">
+    <form action="/skincares" method="POST">
+        <fieldset>
+            <legend>Create New Skincare Product</legend>
+            <label class="form-label">Name: </label>
+            <input 
+                type="text" 
+                name="name" 
+                placeholder="enter skincare product title"
+                class="form-control"
+            >
+            <label class="form-label">Skin Concern:</label>
+            <input 
+                type="text" 
+                name="body" 
+                placeholder="enter skincare concern" 
+                class="form-control"
+            >
+            <label class="form-label">for skin type:</label>
+            <input 
+                type="text" 
+                name="body" 
+                class="form-control"
+            >
+            <label class="form-label">for sensitive skin:</label>
+            <input 
+                type="checkbox" 
+                name="sensitiveSkin" 
+                class="form-check-input"
+            >
+        </fieldset>
+        <input
+        class="btn btn-success"
+                type="submit"
+                value="Create New Skincare Product"
+        >
+    </form>
+</div>
+
+{% endblock %}

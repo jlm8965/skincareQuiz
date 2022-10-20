@@ -1,0 +1,19 @@
+{% layout 'layout.liquid' %}
+{% block content %}
+
+<h1>Your results are in!</h1>
+<p>Based on your responses, below are the skincare products recommended for you</p>
+
+<div class="container-sm"></div>
+
+
+{% for product in products %}
+    <div class="card">
+        <img src="/images/{{product.imageUrl}}" />
+        <div class="container">
+            <p>{{product.name}}</p>
+        </div>
+    </div>
+{% endfor %}
+
+{% endblock %}

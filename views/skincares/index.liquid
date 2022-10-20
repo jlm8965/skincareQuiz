@@ -1,0 +1,46 @@
+{% layout 'layout.liquid'%}
+{% block content %}
+    {% if skincare.length > 0%}
+        <div>
+            <h2 class="display-6">All Skincare Products</h2>
+    <div class="row">
+        {% for skincare in skincares %}
+        <div class="card" style="width: 18rem;">
+            <h5 class="card-header">{{skincare.name}}</h5>
+            <div class="card-body">
+                <h5 class="card-title">
+                     {{skincare.skinConcern }}
+                        </div>
+                            <a class="btn btn-info" href="/skincares/{{skincare.name}}">
+                                View {{skincare.name}}
+                            </a>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    {% else %}
+        <div>
+            <h2 class="display-6">No skincare products yet... time to add some!</h2>
+        </div>
+    {% endif %}
+{% endblock %}
+
+
+
+        const startSkincareProducts = [
+        { name: "Shiseido Clear Sunscreen Stick", sensitiveSkin: true, day: true, night: false, skinType: "allskintypes", skinConcern: "SunProtection", imageUrl: "shiseido.webp"},
+        { name: "Skin Aqua Super Moisture Gel", sensitiveSkin: false, day: true, night: false, skinType: "allskintypes", skinConcern: "SunProtection", imageUrl: "skinAqua.jpg"},
+        { name: "Biore Aqua Rich Watery Essence", sensitiveSkin: true, day: true, night: false, skinType: "allskintypes", skinConcern: "SunProtection", imageUrl: "biore.png"},
+        { name: "Etude House Sunprise Mild Airy Finish Sun Milk", sensitiveSkin: false, day: true, night: false, skinType: "allskintypes", skinConcern: "SunProtection", imageUrl: "etudeHouse.webp" },
+        {name: "Beauty of Joseon Ginseng Essence Water", sensitiveSkin: false, day: true, night: false, skinType: "allskintypes", skinConcern: "Brightening", imageurl: "beautyofJoseon.jpg" },
+        {name: "Goodal Green Tangerine Vita C Dark Spot Serum", sensitiveSkin: false, day: true, night: false, skinType: "allskintypes", skinConcern: "Brightening", imageurl: "goodalGreen.jpg"},
+        {name: "Liz K Super First C Serum Pure Vitamin 13%", sensitiveSkin: false, day: true, night: false, skinType: "allskintypes", skinConcern: "Brightening", imageurl: "lizK.jpg"},
+        {name: "Purito Pure Vitamin C Serum", sensitiveSkin: false, day: true, night: false, skinType: "allskintypes", skinConcern:"Brightening", imageurl: "purito-pure-vitamin-c.avif"}, 
+        {name: "Urang Vitamin Oil Serum", sensitiveSkin: false, day: true, night: false, skinType: "allskintypes", skinConcern: "Brightening", imageurl: "urang.jpg"},
+        {name: "Klairs Freshly Juiced Vitamin Drop", sensitiveSkin: false, day: true, night: false, skinType: "allskintypes", skinConcern: "Brightening", imageurl: "klairs.jpg"},
+        {name: "Isntree C-Niacin Toning Ampoule", sensitiveSkin: true, day: true, night: false, skinType: "allskintypes", skinConcern: "Brightening", imageurl: "isntree.jpg"}, 
+        {name: "Aromatica Super Brite Vita Serum", sensitiveSkin: false, day: true, night: false, skinType: "allskintypes", skinConcern:"Brightening", imageurl: "aromatica.jpg"}, 
+        {name: "It's Skin Power 10 Formula VC Effector", sensitiveSkin: false, day: true, night: false, skinType: "allskintypes", skinConcern: "Brightening", imageurl: "itsskinpower10.jpg"}, 
+        {name: "Paula's Choice Clinical 1% Retinol Treatment Cream", sensitiveSkin: false, day: false, night: true, skinType: "allskintypes", skinConcern: "LinesAndWrinkles", imageUrl: "paulas-choice.jpg"}
+      ]
