@@ -88,6 +88,6 @@ After registration, user will be prompted to complete a "Skincare Analysis" to b
 4. listing of applicable products
 
 
-![ERD](images/ERD.png)
-![Wireframe_1](images/Wireframe_1.jpg)
-![Wireframe_2](images/Wireframe_2.jpg)
+![ERD](planningimgs/ERD.png)
+![Wireframe_1](planningimgs/Wireframe_1.jpg)
+![Wireframe_2](planningimgs/Wireframe_2.jpg)
